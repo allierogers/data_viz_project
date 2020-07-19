@@ -1,0 +1,484 @@
+,naics_category_name,naics_code_name,total_jobs_retained,total_loan_dollars_thousands,loan_count,level
+0,Accommodation and Food Services,,27766.0,347600,577,broad
+1,Administrative and Support and Waste Managemen..,,5651.0,118125,145,broad
+2,"Agriculture, Forestry, Fishing and Hunting",,401.0,10275,10,broad
+3,"Arts, Entertainment, and Recreation",,4935.0,88025,71,broad
+4,Construction,,9883.0,228950,271,broad
+5,Educational Services,,7364.0,121575,129,broad
+6,Finance and Insurance,,4008.0,109800,116,broad
+7,Health Care and Social Assistance,,10700.0,148625,231,broad
+8,Information,,10255.0,266950,299,broad
+9,Management of Companies and Enterprises,,167.0,4375,9,broad
+10,Manufacturing,,6187.0,118425,155,broad
+11,"Mining, Quarrying, and Oil and Gas Extraction",,8.0,250,1,broad
+12,Other Services (except Public Administration),,14454.0,225950,282,broad
+13,"Professional, Scientific, and Technical Services",,29585.0,707375,958,broad
+14,Public Administration,,338.0,6850,11,broad
+15,Real Estate and Rental and Leasing,,5681.0,111950,119,broad
+16,Retail Trade,,10410.0,144200,210,broad
+17,Transportation and Warehousing,,2150.0,46700,45,broad
+18,Utilities,,205.0,4925,5,broad
+19,Wholesale Trade,,3683.0,64850,101,broad
+0,"Agriculture, Forestry, Fishing and Hunting",Potato Farming,79.0,4675,4,granular
+1,"Agriculture, Forestry, Fishing and Hunting",Nursery and Tree Production,55.0,675,1,granular
+2,"Agriculture, Forestry, Fishing and Hunting",All Other Miscellaneous Crop Farming,114.0,3500,1,granular
+3,"Agriculture, Forestry, Fishing and Hunting",Apiculture,36.0,250,1,granular
+4,"Agriculture, Forestry, Fishing and Hunting",All Other Animal Production,20.0,250,1,granular
+5,"Agriculture, Forestry, Fishing and Hunting",Hunting and Trapping,49.0,250,1,granular
+6,"Agriculture, Forestry, Fishing and Hunting",Farm Management Services,48.0,675,1,granular
+7,"Mining, Quarrying, and Oil and Gas Extraction",Support Activities for Oil and Gas Operations,8.0,250,1,granular
+8,Utilities,Solar Electric Power Generation,205.0,4925,5,granular
+9,Construction,New Single-Family Housing Construction (except For-Sale Builders),516.0,12150,30,granular
+10,Construction,New Multifamily Housing Construction (except For-Sale Builders),496.0,10275,7,granular
+11,Construction,New Housing For-Sale Builders,30.0,675,1,granular
+12,Construction,Residential Remodelers,738.0,16425,34,granular
+13,Construction,Industrial Building Construction,40.0,1350,2,granular
+14,Construction,Commercial and Institutional Building Construction,2544.0,60775,59,granular
+15,Construction,Water and Sewer Line and Related Structures Construction,436.0,5625,9,granular
+16,Construction,Land Subdivision,16.0,250,1,granular
+17,Construction,"Highway, Street, and Bridge Construction",174.0,3775,5,granular
+18,Construction,Other Heavy and Civil Engineering Construction,205.0,5100,7,granular
+19,Construction,Poured Concrete Foundation and Structure Contractors,85.0,1750,2,granular
+20,Construction,Structural Steel and Precast Concrete Contractors,43.0,675,1,granular
+21,Construction,Framing Contractors,21.0,750,3,granular
+22,Construction,Masonry Contractors,41.0,925,2,granular
+23,Construction,Glass and Glazing Contractors,85.0,3775,5,granular
+24,Construction,Roofing Contractors,78.0,1600,3,granular
+25,Construction,Electrical Contractors and Other Wiring Installation Contractors,2155.0,58350,35,granular
+26,Construction,"Plumbing, Heating, and Air-Conditioning Contractors",487.0,14200,27,granular
+27,Construction,Other Building Equipment Contractors,26.0,500,2,granular
+28,Construction,Drywall and Insulation Contractors,526.0,7675,3,granular
+29,Construction,Painting and Wall Covering Contractors,276.0,4275,7,granular
+30,Construction,Flooring Contractors,79.0,1600,3,granular
+31,Construction,Tile and Terrazzo Contractors,21.0,250,1,granular
+32,Construction,Finish Carpentry Contractors,24.0,500,2,granular
+33,Construction,Other Building Finishing Contractors,206.0,1425,4,granular
+34,Construction,Site Preparation Contractors,153.0,1750,2,granular
+35,Construction,All Other Specialty Trade Contractors,382.0,12550,14,granular
+36,Manufacturing,Rice Milling,10.0,250,1,granular
+37,Manufacturing,Nonchocolate Confectionery Manufacturing,21.0,250,1,granular
+38,Manufacturing,Chocolate and Confectionery Manufacturing from Cacao Beans,95.0,1500,1,granular
+39,Manufacturing,"Frozen Fruit, Juice, and Vegetable Manufacturing",135.0,925,2,granular
+40,Manufacturing,Frozen Specialty Food Manufacturing,14.0,250,1,granular
+41,Manufacturing,Meat Processed from Carcasses,30.0,675,1,granular
+42,Manufacturing,Poultry Processing,82.0,1500,1,granular
+43,Manufacturing,Seafood Product Preparation and Packaging,188.0,3500,1,granular
+44,Manufacturing,Retail Bakeries,444.0,9850,10,granular
+45,Manufacturing,Commercial Bakeries,524.0,5350,5,granular
+46,Manufacturing,"Frozen Cakes, Pies, and Other Pastries Manufacturing",56.0,675,1,granular
+47,Manufacturing,"Dry Pasta, Dough, and Flour Mixes Manufacturing from Purchased Flour",40.0,250,1,granular
+48,Manufacturing,Coffee and Tea Manufacturing,121.0,1350,2,granular
+49,Manufacturing,Spice and Extract Manufacturing,0.0,250,1,granular
+50,Manufacturing,All Other Miscellaneous Food Manufacturing,58.0,1425,4,granular
+51,Manufacturing,Breweries,607.0,7925,7,granular
+52,Manufacturing,Wineries,14.0,675,1,granular
+53,Manufacturing,Distilleries,11.0,250,1,granular
+54,Manufacturing,Curtain and Linen Mills,10.0,925,2,granular
+55,Manufacturing,"Women’s, Girls’, and Infants’ Cut and Sew Apparel Manufacturing",706.0,11675,3,granular
+56,Manufacturing,Other Cut and Sew Apparel Manufacturing,118.0,1750,2,granular
+57,Manufacturing,Apparel Accessories and Other Apparel Manufacturing,302.0,2425,3,granular
+58,Manufacturing,Women's Handbag and Purse Manufacturing,8.0,250,1,granular
+59,Manufacturing,Wood Window and Door Manufacturing,12.0,250,1,granular
+60,Manufacturing,Other Millwork (including Flooring),45.0,675,1,granular
+61,Manufacturing,All Other Miscellaneous Wood Product Manufacturing,19.0,250,1,granular
+62,Manufacturing,All Other Converted Paper Product Manufacturing,55.0,675,1,granular
+63,Manufacturing,Commercial Printing (except Screen and Books),141.0,3425,7,granular
+64,Manufacturing,Support Activities for Printing,33.0,675,1,granular
+65,Manufacturing,Pharmaceutical Preparation Manufacturing,21.0,1350,2,granular
+66,Manufacturing,Toilet Preparation Manufacturing,58.0,1750,2,granular
+67,Manufacturing,Explosives Manufacturing,104.0,1500,1,granular
+68,Manufacturing,All Other Plastics Product Manufacturing,36.0,675,1,granular
+69,Manufacturing,Rubber and Plastics Hoses and Belting Manufacturing,11.0,250,1,granular
+70,Manufacturing,Cut Stone and Stone Product Manufacturing,19.0,250,1,granular
+71,Manufacturing,Aluminum Foundries (except Die-Casting),82.0,925,2,granular
+72,Manufacturing,"Metal Kitchen Cookware, Utensil, Cutlery, and Flatware (except Precious) Manufacturing",26.0,250,1,granular
+73,Manufacturing,Sheet Metal Work Manufacturing,7.0,250,1,granular
+74,Manufacturing,Ornamental and Architectural Metal Work Manufacturing,19.0,250,1,granular
+75,Manufacturing,Other Metal Container Manufacturing,52.0,675,1,granular
+76,Manufacturing,Machine Shops,0.0,250,1,granular
+77,Manufacturing,"Electroplating, Plating, Polishing, Anodizing, and Coloring",54.0,675,1,granular
+78,Manufacturing,Construction Machinery Manufacturing,18.0,250,1,granular
+79,Manufacturing,Food Product Machinery Manufacturing,40.0,675,1,granular
+80,Manufacturing,Other Industrial Machinery Manufacturing,0.0,675,1,granular
+81,Manufacturing,Other Commercial and Service Industry Machinery Manufacturing,12.0,250,1,granular
+82,Manufacturing,Industrial and Commercial Fan and Blower and Air Purification Equipment Manufacturing,47.0,1500,1,granular
+83,Manufacturing,Heating Equipment (except Warm Air Furnaces) Manufacturing,60.0,925,2,granular
+84,Manufacturing,"Measuring, Dispensing, and Other Pumping Equipment Manufacturing",25.0,675,1,granular
+85,Manufacturing,"Overhead Traveling Crane, Hoist, and Monorail System Manufacturing",12.0,250,1,granular
+86,Manufacturing,All Other Miscellaneous General Purpose Machinery Manufacturing,16.0,500,2,granular
+87,Manufacturing,Electronic Computer Manufacturing,140.0,5100,4,granular
+88,Manufacturing,Radio and Television Broadcasting and Wireless Communications Equipment Manufacturing,105.0,1750,2,granular
+89,Manufacturing,Other Communications Equipment Manufacturing,11.0,250,1,granular
+90,Manufacturing,Audio and Video Equipment Manufacturing,75.0,1750,2,granular
+91,Manufacturing,Semiconductor and Related Device Manufacturing,60.0,2275,4,granular
+92,Manufacturing,"Capacitor, Resistor, Coil, Transformer, and Other Inductor Manufacturing",43.0,675,1,granular
+93,Manufacturing,Printed Circuit Assembly (Electronic Assembly) Manufacturing,0.0,3500,1,granular
+94,Manufacturing,Other Electronic Component Manufacturing,86.0,2000,3,granular
+95,Manufacturing,Electromedical and Electrotherapeutic Apparatus Manufacturing,6.0,500,2,granular
+96,Manufacturing,"Search, Detection, Navigation, Guidance, Aeronautical, and Nautical System and Instrument Manufacturing",47.0,675,1,granular
+97,Manufacturing,Analytical Laboratory Instrument Manufacturing,10.0,250,1,granular
+98,Manufacturing,Other Measuring and Controlling Device Manufacturing,12.0,250,1,granular
+99,Manufacturing,"Software and Other Prerecorded Compact Disc, Tape, and Record Reproducing",333.0,10525,8,granular
+100,Manufacturing,Residential Electric Lighting Fixture Manufacturing,51.0,1175,3,granular
+101,Manufacturing,"Commercial, Industrial, and Institutional Electric Lighting Fixture Manufacturing",30.0,675,1,granular
+102,Manufacturing,Aircraft Manufacturing,0.0,675,1,granular
+103,Manufacturing,Other Aircraft Parts and Auxiliary Equipment Manufacturing,30.0,675,1,granular
+104,Manufacturing,Wood Kitchen Cabinet and Countertop Manufacturing,19.0,250,1,granular
+105,Manufacturing,Upholstered Household Furniture Manufacturing,10.0,250,1,granular
+106,Manufacturing,Nonupholstered Wood Household Furniture Manufacturing,15.0,250,1,granular
+107,Manufacturing,Custom Architectural Woodwork and Millwork Manufacturing,55.0,750,3,granular
+108,Manufacturing,Mattress Manufacturing,10.0,250,1,granular
+109,Manufacturing,Surgical and Medical Instrument Manufacturing,64.0,1850,4,granular
+110,Manufacturing,Ophthalmic Goods Manufacturing,0.0,675,1,granular
+111,Manufacturing,Dental Laboratories,15.0,250,1,granular
+112,Manufacturing,Sporting and Athletic Goods Manufacturing,4.0,250,1,granular
+113,Manufacturing,"Doll, Toy, and Game Manufacturing",70.0,675,1,granular
+114,Manufacturing,Sign Manufacturing,157.0,3350,5,granular
+115,Manufacturing,All Other Miscellaneous Manufacturing,111.0,2350,6,granular
+116,Wholesale Trade,Automobile and Other Motor Vehicle Merchant Wholesalers,165.0,3750,2,granular
+117,Wholesale Trade,Motor Vehicle Supplies and New Parts Merchant Wholesalers,38.0,675,1,granular
+118,Wholesale Trade,Furniture Merchant Wholesalers,133.0,2925,5,granular
+119,Wholesale Trade,Home Furnishing Merchant Wholesalers,81.0,1600,3,granular
+120,Wholesale Trade,"Lumber, Plywood, Millwork, and Wood Panel Merchant Wholesalers",151.0,2425,3,granular
+121,Wholesale Trade,"Brick, Stone, and Related Construction Material Merchant Wholesalers",305.0,5000,2,granular
+122,Wholesale Trade,"Roofing, Siding, and Insulation Material Merchant Wholesalers",13.0,250,1,granular
+123,Wholesale Trade,Other Construction Material Merchant Wholesalers,115.0,2025,3,granular
+124,Wholesale Trade,Photographic Equipment and Supplies Merchant Wholesalers,80.0,250,1,granular
+125,Wholesale Trade,Computer and Computer Peripheral Equipment and Software Merchant Wholesalers,113.0,2850,3,granular
+126,Wholesale Trade,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",29.0,925,2,granular
+127,Wholesale Trade,Ophthalmic Goods Merchant Wholesalers,7.0,250,1,granular
+128,Wholesale Trade,Other Professional Equipment and Supplies Merchant Wholesalers,0.0,250,1,granular
+129,Wholesale Trade,Metal Service Centers and Other Metal Merchant Wholesalers,10.0,250,1,granular
+130,Wholesale Trade,"Electrical Apparatus and Equipment, Wiring Supplies, and Related Equipment Merchant Wholesalers",29.0,1175,3,granular
+131,Wholesale Trade,"Household Appliances, Electric Housewares, and Consumer Electronics Merchant Wholesalers",0.0,675,1,granular
+132,Wholesale Trade,Hardware Merchant Wholesalers,87.0,1175,3,granular
+133,Wholesale Trade,Plumbing and Heating Equipment and Supplies (Hydronics) Merchant Wholesalers,19.0,1600,3,granular
+134,Wholesale Trade,Warm Air Heating and Air-Conditioning Equipment and Supplies Merchant Wholesalers,0.0,250,1,granular
+135,Wholesale Trade,Industrial Machinery and Equipment Merchant Wholesalers,24.0,500,2,granular
+136,Wholesale Trade,Industrial Supplies Merchant Wholesalers,117.0,1500,1,granular
+137,Wholesale Trade,Sporting and Recreational Goods and Supplies Merchant Wholesalers,156.0,2425,3,granular
+138,Wholesale Trade,Toy and Hobby Goods and Supplies Merchant Wholesalers,30.0,675,1,granular
+139,Wholesale Trade,Recyclable Material Merchant Wholesalers,34.0,675,1,granular
+140,Wholesale Trade,"Jewelry, Watch, Precious Stone, and Precious Metal Merchant Wholesalers",68.0,2275,4,granular
+141,Wholesale Trade,Other Miscellaneous Durable Goods Merchant Wholesalers,143.0,2500,5,granular
+142,Wholesale Trade,General Line Grocery Merchant Wholesalers,627.0,5175,6,granular
+143,Wholesale Trade,Poultry and Poultry Product Merchant Wholesalers,20.0,675,1,granular
+144,Wholesale Trade,Fish and Seafood Merchant Wholesalers,168.0,3525,9,granular
+145,Wholesale Trade,Meat and Meat Product Merchant Wholesalers,2.0,250,1,granular
+146,Wholesale Trade,Fresh Fruit and Vegetable Merchant Wholesalers,244.0,3500,4,granular
+147,Wholesale Trade,Other Grocery and Related Products Merchant Wholesalers,124.0,1175,3,granular
+148,Wholesale Trade,Other Chemical and Allied Products Merchant Wholesalers,13.0,1500,1,granular
+149,Wholesale Trade,Beer and Ale Merchant Wholesalers,49.0,675,1,granular
+150,Wholesale Trade,Wine and Distilled Alcoholic Beverage Merchant Wholesalers,192.0,4100,8,granular
+151,Wholesale Trade,"Flower, Nursery Stock, and Florists' Supplies Merchant Wholesalers",17.0,250,1,granular
+152,Wholesale Trade,Other Miscellaneous Nondurable Goods Merchant Wholesalers,28.0,750,3,granular
+153,Wholesale Trade,Business to Business Electronic Markets,94.0,2175,2,granular
+154,Wholesale Trade,Wholesale Trade Agents and Brokers,158.0,2250,4,granular
+155,Retail Trade,New Car Dealers,1096.0,12275,8,granular
+156,Retail Trade,Used Car Dealers,39.0,675,1,granular
+157,Retail Trade,"Motorcycle, ATV, and All Other Motor Vehicle Dealers",19.0,250,1,granular
+158,Retail Trade,Automotive Parts and Accessories Stores,182.0,1500,1,granular
+159,Retail Trade,Tire Dealers,18.0,250,1,granular
+160,Retail Trade,Furniture Stores,16.0,925,2,granular
+161,Retail Trade,Floor Covering Stores,61.0,925,2,granular
+162,Retail Trade,Window Treatment Stores,17.0,250,1,granular
+163,Retail Trade,All Other Home Furnishings Stores,172.0,2100,5,granular
+164,Retail Trade,Household Appliance Stores,16.0,250,1,granular
+165,Retail Trade,Electronics Stores,176.0,4925,5,granular
+166,Retail Trade,Home Centers,52.0,925,2,granular
+167,Retail Trade,Paint and Wallpaper Stores,49.0,675,1,granular
+168,Retail Trade,Hardware Stores,144.0,1750,2,granular
+169,Retail Trade,Other Building Material Dealers,212.0,2175,7,granular
+170,Retail Trade,Supermarkets and Other Grocery (except Convenience) Stores,1644.0,17075,22,granular
+171,Retail Trade,Baked Goods Stores,199.0,1850,4,granular
+172,Retail Trade,Confectionery and Nut Stores,28.0,500,2,granular
+173,Retail Trade,All Other Specialty Food Stores,459.0,5625,9,granular
+174,Retail Trade,"Beer, Wine, and Liquor Stores",46.0,925,2,granular
+175,Retail Trade,Pharmacies and Drug Stores,69.0,1425,4,granular
+176,Retail Trade,"Cosmetics, Beauty Supplies, and Perfume Stores",113.0,3100,4,granular
+177,Retail Trade,Optical Goods Stores,70.0,675,1,granular
+178,Retail Trade,Food (Health) Supplement Stores,30.0,500,2,granular
+179,Retail Trade,All Other Health and Personal Care Stores,21.0,500,2,granular
+180,Retail Trade,Gasoline Stations with Convenience Stores,69.0,925,2,granular
+181,Retail Trade,Other Gasoline Stations,71.0,675,1,granular
+182,Retail Trade,Men's Clothing Stores,8.0,675,1,granular
+183,Retail Trade,Women's Clothing Stores,343.0,4950,8,granular
+184,Retail Trade,Children's and Infants' Clothing Stores,30.0,675,1,granular
+185,Retail Trade,Family Clothing Stores,345.0,4000,3,granular
+186,Retail Trade,Clothing Accessories Stores,34.0,675,1,granular
+187,Retail Trade,Other Clothing Stores,119.0,1600,3,granular
+188,Retail Trade,Shoe Stores,14.0,250,1,granular
+189,Retail Trade,Jewelry Stores,40.0,925,2,granular
+190,Retail Trade,Sporting Goods Stores,62.0,1175,3,granular
+191,Retail Trade,Book Stores,341.0,4425,3,granular
+192,Retail Trade,News Dealers and Newsstands,17.0,250,1,granular
+193,Retail Trade,Department Stores,29.0,250,1,granular
+194,Retail Trade,All Other General Merchandise Stores,148.0,2525,5,granular
+195,Retail Trade,Florists,134.0,1500,1,granular
+196,Retail Trade,Office Supplies and Stationery Stores,73.0,1750,2,granular
+197,Retail Trade,"Gift, Novelty, and Souvenir Stores",475.0,4250,4,granular
+198,Retail Trade,Used Merchandise Stores,94.0,750,3,granular
+199,Retail Trade,Art Dealers,45.0,1850,4,granular
+200,Retail Trade,Tobacco Stores,0.0,250,1,granular
+201,Retail Trade,All Other Miscellaneous Store Retailers (except Tobacco Stores),2276.0,34625,54,granular
+202,Retail Trade,Electronic Shopping and Mail-Order Houses,657.0,12300,11,granular
+203,Retail Trade,Other Direct Selling Establishments,38.0,925,2,granular
+204,Transportation and Warehousing,Scheduled Passenger Air Transportation,100.0,3500,1,granular
+205,Transportation and Warehousing,Deep Sea Freight Transportation,9.0,250,1,granular
+206,Transportation and Warehousing,Coastal and Great Lakes Passenger Transportation,294.0,7500,1,granular
+207,Transportation and Warehousing,Inland Water Freight Transportation,37.0,675,1,granular
+208,Transportation and Warehousing,"General Freight Trucking, Local",92.0,9175,6,granular
+209,Transportation and Warehousing,"General Freight Trucking, Long-Distance, Truckload",38.0,925,2,granular
+210,Transportation and Warehousing,"General Freight Trucking, Long-Distance, Less Than Truckload",0.0,250,1,granular
+211,Transportation and Warehousing,Used Household and Office Goods Moving,46.0,750,3,granular
+212,Transportation and Warehousing,"Specialized Freight (except Used Goods) Trucking, Long-Distance",27.0,675,1,granular
+213,Transportation and Warehousing,Interurban and Rural Bus Transportation,6.0,250,1,granular
+214,Transportation and Warehousing,Taxi Service,20.0,250,1,granular
+215,Transportation and Warehousing,Limousine Service,287.0,4000,3,granular
+216,Transportation and Warehousing,Charter Bus Industry,109.0,1850,4,granular
+217,Transportation and Warehousing,All Other Transit and Ground Passenger Transportation,565.0,9675,3,granular
+218,Transportation and Warehousing,"Scenic and Sightseeing Transportation, Land",79.0,925,2,granular
+219,Transportation and Warehousing,"Scenic and Sightseeing Transportation, Water",10.0,675,1,granular
+220,Transportation and Warehousing,Other Airport Operations,51.0,675,1,granular
+221,Transportation and Warehousing,Other Support Activities for Air Transportation,10.0,250,1,granular
+222,Transportation and Warehousing,Support Activities for Rail Transportation,25.0,250,1,granular
+223,Transportation and Warehousing,Navigational Services to Shipping,56.0,675,1,granular
+224,Transportation and Warehousing,Motor Vehicle Towing,168.0,1350,2,granular
+225,Transportation and Warehousing,Freight Transportation Arrangement,22.0,250,1,granular
+226,Transportation and Warehousing,Packing and Crating,11.0,250,1,granular
+227,Transportation and Warehousing,Couriers and Express Delivery Services,11.0,500,2,granular
+228,Transportation and Warehousing,Local Messengers and Local Delivery,49.0,675,1,granular
+229,Transportation and Warehousing,Refrigerated Warehousing and Storage,28.0,500,2,granular
+230,Information,Newspaper Publishers,0.0,675,1,granular
+231,Information,Periodical Publishers,171.0,4350,4,granular
+232,Information,Book Publishers,16.0,675,1,granular
+233,Information,All Other Publishers,124.0,2750,6,granular
+234,Information,Software Publishers,5522.0,154025,183,granular
+235,Information,Motion Picture and Video Production,223.0,5675,8,granular
+236,Information,Motion Picture and Video Distribution,49.0,1175,3,granular
+237,Information,Teleproduction and Other Postproduction Services,69.0,1850,4,granular
+238,Information,Other Motion Picture and Video Industries,15.0,250,1,granular
+239,Information,Sound Recording Studios,72.0,675,1,granular
+240,Information,Other Sound Recording Industries,35.0,675,1,granular
+241,Information,Radio Stations,19.0,675,1,granular
+242,Information,Cable and Other Subscription Programming,250.0,7500,1,granular
+243,Information,Wireless Telecommunications Carriers (except Satellite),43.0,500,2,granular
+244,Information,Satellite Telecommunications,28.0,675,1,granular
+245,Information,Telecommunications Resellers,17.0,925,2,granular
+246,Information,All Other Telecommunications,267.0,8625,8,granular
+247,Information,"Data Processing, Hosting, and Related Services",1991.0,41000,39,granular
+248,Information,News Syndicates,33.0,675,1,granular
+249,Information,Libraries and Archives,17.0,3750,2,granular
+250,Information,Internet Publishing and Broadcasting and Web Search Portals,1083.0,20875,15,granular
+251,Information,All Other Information Services,211.0,8975,14,granular
+252,Finance and Insurance,Sales Financing,118.0,3750,2,granular
+253,Finance and Insurance,Consumer Lending,422.0,13350,8,granular
+254,Finance and Insurance,Real Estate Credit,28.0,8175,2,granular
+255,Finance and Insurance,All Other Nondepository Credit Intermediation,26.0,675,1,granular
+256,Finance and Insurance,Mortgage and Nonmortgage Loan Brokers,103.0,3000,2,granular
+257,Finance and Insurance,"Financial Transactions Processing, Reserve, and Clearinghouse Activities",123.0,3350,5,granular
+258,Finance and Insurance,Other Activities Related to Credit Intermediation,30.0,675,1,granular
+259,Finance and Insurance,Investment Banking and Securities Dealing,250.0,6350,9,granular
+260,Finance and Insurance,Securities Brokerage,126.0,4275,7,granular
+261,Finance and Insurance,Securities and Commodity Exchanges,11.0,250,1,granular
+262,Finance and Insurance,Miscellaneous Intermediation,61.0,1250,5,granular
+263,Finance and Insurance,Portfolio Management,316.0,5850,7,granular
+264,Finance and Insurance,Investment Advice,543.0,15475,30,granular
+265,Finance and Insurance,Miscellaneous Financial Investment Activities,58.0,1425,4,granular
+266,Finance and Insurance,Direct Life Insurance Carriers,0.0,250,1,granular
+267,Finance and Insurance,Direct Health and Medical Insurance Carriers,621.0,7000,2,granular
+268,Finance and Insurance,Direct Property and Casualty Insurance Carriers,75.0,7500,1,granular
+269,Finance and Insurance,Insurance Agencies and Brokerages,356.0,9750,17,granular
+270,Finance and Insurance,Claims Adjusting,20.0,250,1,granular
+271,Finance and Insurance,Third Party Administration of Insurance and Pension Funds,84.0,1500,1,granular
+272,Finance and Insurance,All Other Insurance Related Activities,181.0,5525,4,granular
+273,Finance and Insurance,"Trusts, Estates, and Agency Accounts",433.0,9250,3,granular
+274,Finance and Insurance,Other Financial Vehicles,23.0,925,2,granular
+275,Real Estate and Rental and Leasing,Lessors of Residential Buildings and Dwellings,1134.0,18450,15,granular
+276,Real Estate and Rental and Leasing,Lessors of Nonresidential Buildings (except Miniwarehouses),1168.0,21900,25,granular
+277,Real Estate and Rental and Leasing,Lessors of Other Real Estate Property,152.0,2000,3,granular
+278,Real Estate and Rental and Leasing,Offices of Real Estate Agents and Brokers,856.0,17700,17,granular
+279,Real Estate and Rental and Leasing,Residential Property Managers,1163.0,19175,22,granular
+280,Real Estate and Rental and Leasing,Nonresidential Property Managers,540.0,9650,12,granular
+281,Real Estate and Rental and Leasing,Other Activities Related to Real Estate,605.0,12900,20,granular
+282,Real Estate and Rental and Leasing,Passenger Car Rental,33.0,8175,2,granular
+283,Real Estate and Rental and Leasing,Video Tape and Disc Rental,0.0,1500,1,granular
+284,Real Estate and Rental and Leasing,All Other Consumer Goods Rental,12.0,250,1,granular
+285,Real Estate and Rental and Leasing,Office Machinery and Equipment Rental and Leasing,18.0,250,1,granular
+286,"Professional, Scientific, and Technical Services",Offices of Lawyers,4913.0,94450,158,granular
+287,"Professional, Scientific, and Technical Services",All Other Legal Services,707.0,18025,9,granular
+288,"Professional, Scientific, and Technical Services",Offices of Certified Public Accountants,866.0,24825,30,granular
+289,"Professional, Scientific, and Technical Services",Payroll Services,87.0,1350,2,granular
+290,"Professional, Scientific, and Technical Services",Other Accounting Services,317.0,9175,9,granular
+291,"Professional, Scientific, and Technical Services",Architectural Services,2424.0,62975,92,granular
+292,"Professional, Scientific, and Technical Services",Landscape Architectural Services,447.0,5950,12,granular
+293,"Professional, Scientific, and Technical Services",Engineering Services,1688.0,45500,61,granular
+294,"Professional, Scientific, and Technical Services",Building Inspection Services,127.0,1750,2,granular
+295,"Professional, Scientific, and Technical Services",Surveying and Mapping (except Geophysical) Services,11.0,250,1,granular
+296,"Professional, Scientific, and Technical Services",Testing Laboratories,47.0,2850,3,granular
+297,"Professional, Scientific, and Technical Services",Interior Design Services,256.0,5625,14,granular
+298,"Professional, Scientific, and Technical Services",Industrial Design Services,38.0,750,3,granular
+299,"Professional, Scientific, and Technical Services",Graphic Design Services,299.0,8975,19,granular
+300,"Professional, Scientific, and Technical Services",Other Specialized Design Services,393.0,9225,15,granular
+301,"Professional, Scientific, and Technical Services",Custom Computer Programming Services,4535.0,122650,150,granular
+302,"Professional, Scientific, and Technical Services",Computer Systems Design Services,1049.0,29600,50,granular
+303,"Professional, Scientific, and Technical Services",Other Computer Related Services,1005.0,34550,30,granular
+304,"Professional, Scientific, and Technical Services",Administrative Management and General Management Consulting Services,1414.0,34150,52,granular
+305,"Professional, Scientific, and Technical Services",Human Resources Consulting Services,235.0,4450,6,granular
+306,"Professional, Scientific, and Technical Services",Marketing Consulting Services,1062.0,29000,29,granular
+307,"Professional, Scientific, and Technical Services",Other Management Consulting Services,426.0,7625,22,granular
+308,"Professional, Scientific, and Technical Services",Environmental Consulting Services,198.0,3950,9,granular
+309,"Professional, Scientific, and Technical Services",Other Scientific and Technical Consulting Services,484.0,12625,16,granular
+310,"Professional, Scientific, and Technical Services",Research and Development in Nanotechnology,15.0,250,1,granular
+311,"Professional, Scientific, and Technical Services",Research and Development in Biotechnology (except Nanobiotechnology),238.0,5550,12,granular
+312,"Professional, Scientific, and Technical Services","Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology)",636.0,11450,10,granular
+313,"Professional, Scientific, and Technical Services",Research and Development in the Social Sciences and Humanities,610.0,13275,6,granular
+314,"Professional, Scientific, and Technical Services",Advertising Agencies,1448.0,32200,41,granular
+315,"Professional, Scientific, and Technical Services",Public Relations Agencies,551.0,9725,14,granular
+316,"Professional, Scientific, and Technical Services",Media Buying Agencies,387.0,7500,1,granular
+317,"Professional, Scientific, and Technical Services",Media Representatives,101.0,2175,2,granular
+318,"Professional, Scientific, and Technical Services",Direct Mail Advertising,10.0,250,1,granular
+319,"Professional, Scientific, and Technical Services",Other Services Related to Advertising,204.0,4675,7,granular
+320,"Professional, Scientific, and Technical Services",Marketing Research and Public Opinion Polling,127.0,3750,5,granular
+321,"Professional, Scientific, and Technical Services",Commercial Photography,13.0,250,1,granular
+322,"Professional, Scientific, and Technical Services",Translation and Interpretation Services,176.0,1425,4,granular
+323,"Professional, Scientific, and Technical Services",Veterinary Services,190.0,4200,10,granular
+324,"Professional, Scientific, and Technical Services","All Other Professional, Scientific, and Technical Services",1851.0,40425,49,granular
+325,Management of Companies and Enterprises,Offices of Bank Holding Companies,0.0,675,1,granular
+326,Management of Companies and Enterprises,Offices of Other Holding Companies,140.0,3450,7,granular
+327,Management of Companies and Enterprises,"Corporate, Subsidiary, and Regional Managing Offices",27.0,250,1,granular
+328,Administrative and Support and Waste Managemen..,Office Administrative Services,154.0,4450,11,granular
+329,Administrative and Support and Waste Managemen..,Facilities Support Services,66.0,9000,2,granular
+330,Administrative and Support and Waste Managemen..,Employment Placement Agencies,1172.0,25450,17,granular
+331,Administrative and Support and Waste Managemen..,Executive Search Services,522.0,11050,16,granular
+332,Administrative and Support and Waste Managemen..,Temporary Help Services,314.0,8775,7,granular
+333,Administrative and Support and Waste Managemen..,Professional Employer Organizations,27.0,250,1,granular
+334,Administrative and Support and Waste Managemen..,Telemarketing Bureaus and Other Contact Centers,22.0,250,1,granular
+335,Administrative and Support and Waste Managemen..,Private Mail Centers,25.0,250,1,granular
+336,Administrative and Support and Waste Managemen..,Other Business Service Centers (including Copy Shops),16.0,500,2,granular
+337,Administrative and Support and Waste Managemen..,All Other Business Support Services,463.0,6425,11,granular
+338,Administrative and Support and Waste Managemen..,Travel Agencies,102.0,2175,7,granular
+339,Administrative and Support and Waste Managemen..,Tour Operators,84.0,1600,3,granular
+340,Administrative and Support and Waste Managemen..,All Other Travel Arrangement and Reservation Services,153.0,3500,1,granular
+341,Administrative and Support and Waste Managemen..,Security Guards and Patrol Services,1156.0,13550,13,granular
+342,Administrative and Support and Waste Managemen..,Security Systems Services (except Locksmiths),103.0,2700,4,granular
+343,Administrative and Support and Waste Managemen..,Locksmiths,40.0,925,2,granular
+344,Administrative and Support and Waste Managemen..,Exterminating and Pest Control Services,30.0,925,2,granular
+345,Administrative and Support and Waste Managemen..,Janitorial Services,258.0,4025,11,granular
+346,Administrative and Support and Waste Managemen..,Landscaping Services,60.0,1750,7,granular
+347,Administrative and Support and Waste Managemen..,Convention and Trade Show Organizers,51.0,1175,3,granular
+348,Administrative and Support and Waste Managemen..,All Other Support Services,772.0,17550,19,granular
+349,Administrative and Support and Waste Managemen..,Hazardous Waste Treatment and Disposal,0.0,675,1,granular
+350,Administrative and Support and Waste Managemen..,Remediation Services,40.0,675,1,granular
+351,Administrative and Support and Waste Managemen..,Materials Recovery Facilities,10.0,250,1,granular
+352,Administrative and Support and Waste Managemen..,All Other Miscellaneous Waste Management Services,11.0,250,1,granular
+353,Educational Services,Elementary and Secondary Schools,2754.0,40200,48,granular
+354,Educational Services,"Colleges, Universities, and Professional Schools",1320.0,17850,8,granular
+355,Educational Services,Computer Training,75.0,2425,3,granular
+356,Educational Services,Professional and Management Development Training,208.0,5100,4,granular
+357,Educational Services,Cosmetology and Barber Schools,41.0,925,2,granular
+358,Educational Services,Apprenticeship Training,13.0,250,1,granular
+359,Educational Services,Other Technical and Trade Schools,86.0,1925,6,granular
+360,Educational Services,Fine Arts Schools,438.0,3850,7,granular
+361,Educational Services,Language Schools,27.0,1175,3,granular
+362,Educational Services,Exam Preparation and Tutoring,44.0,675,1,granular
+363,Educational Services,All Other Miscellaneous Schools and Instruction,919.0,18125,17,granular
+364,Educational Services,Educational Support Services,1439.0,29075,29,granular
+365,Health Care and Social Assistance,Offices of Physicians (except Mental Health Specialists),833.0,20525,40,granular
+366,Health Care and Social Assistance,"Offices of Physicians, Mental Health Specialists",151.0,2000,3,granular
+367,Health Care and Social Assistance,Offices of Dentists,469.0,10525,37,granular
+368,Health Care and Social Assistance,Offices of Chiropractors,31.0,1000,4,granular
+369,Health Care and Social Assistance,Offices of Optometrists,15.0,500,2,granular
+370,Health Care and Social Assistance,Offices of Mental Health Practitioners (except Physicians),405.0,3750,2,granular
+371,Health Care and Social Assistance,"Offices of Physical, Occupational and Speech Therapists, and Audiologists",90.0,2600,7,granular
+372,Health Care and Social Assistance,Offices of Podiatrists,87.0,2000,3,granular
+373,Health Care and Social Assistance,Offices of All Other Miscellaneous Health Practitioners,97.0,2175,7,granular
+374,Health Care and Social Assistance,Family Planning Centers,53.0,675,1,granular
+375,Health Care and Social Assistance,Outpatient Mental Health and Substance Abuse Centers,18.0,500,2,granular
+376,Health Care and Social Assistance,Freestanding Ambulatory Surgical and Emergency Centers,68.0,1600,3,granular
+377,Health Care and Social Assistance,All Other Outpatient Care Centers,95.0,1600,3,granular
+378,Health Care and Social Assistance,Diagnostic Imaging Centers,115.0,1350,2,granular
+379,Health Care and Social Assistance,Home Health Care Services,728.0,9100,7,granular
+380,Health Care and Social Assistance,All Other Miscellaneous Ambulatory Health Care Services,620.0,10850,9,granular
+381,Health Care and Social Assistance,General Medical and Surgical Hospitals,145.0,3175,6,granular
+382,Health Care and Social Assistance,Psychiatric and Substance Abuse Hospitals,86.0,1350,2,granular
+383,Health Care and Social Assistance,Specialty (except Psychiatric and Substance Abuse) Hospitals,72.0,1175,3,granular
+384,Health Care and Social Assistance,Nursing Care Facilities (Skilled Nursing Facilities),131.0,4000,6,granular
+385,Health Care and Social Assistance,Residential Mental Health and Substance Abuse Facilities,0.0,5000,2,granular
+386,Health Care and Social Assistance,Assisted Living Facilities for the Elderly,312.0,2675,4,granular
+387,Health Care and Social Assistance,Other Residential Care Facilities,13.0,250,1,granular
+388,Health Care and Social Assistance,Child and Youth Services,992.0,12200,14,granular
+389,Health Care and Social Assistance,Services for the Elderly and Persons with Disabilities,206.0,2775,6,granular
+390,Health Care and Social Assistance,Other Individual and Family Services,2053.0,14750,22,granular
+391,Health Care and Social Assistance,Community Food Services,264.0,5000,2,granular
+392,Health Care and Social Assistance,Temporary Shelters,87.0,1350,2,granular
+393,Health Care and Social Assistance,Other Community Housing Services,175.0,2950,5,granular
+394,Health Care and Social Assistance,Emergency and Other Relief Services,20.0,250,1,granular
+395,Health Care and Social Assistance,Vocational Rehabilitation Services,724.0,7675,3,granular
+396,Health Care and Social Assistance,Child Day Care Services,1545.0,13300,20,granular
+397,"Arts, Entertainment, and Recreation",Theater Companies and Dinner Theaters,714.0,15250,6,granular
+398,"Arts, Entertainment, and Recreation",Dance Companies,83.0,675,1,granular
+399,"Arts, Entertainment, and Recreation",Musical Groups and Artists,427.0,8925,5,granular
+400,"Arts, Entertainment, and Recreation",Other Performing Arts Companies,871.0,11750,8,granular
+401,"Arts, Entertainment, and Recreation",Sports Teams and Clubs,0.0,250,1,granular
+402,"Arts, Entertainment, and Recreation","Promoters of Performing Arts, Sports, and Similar Events with Facilities",26.0,750,3,granular
+403,"Arts, Entertainment, and Recreation","Promoters of Performing Arts, Sports, and Similar Events without Facilities",113.0,2000,3,granular
+404,"Arts, Entertainment, and Recreation","Agents and Managers for Artists, Athletes, Entertainers, and Other Public Figures",72.0,1250,5,granular
+405,"Arts, Entertainment, and Recreation","Independent Artists, Writers, and Performers",151.0,1600,3,granular
+406,"Arts, Entertainment, and Recreation",Museums,1578.0,29525,16,granular
+407,"Arts, Entertainment, and Recreation",Nature Parks and Other Similar Institutions,338.0,7500,1,granular
+408,"Arts, Entertainment, and Recreation",Amusement and Theme Parks,31.0,675,1,granular
+409,"Arts, Entertainment, and Recreation",Amusement Arcades,0.0,250,1,granular
+410,"Arts, Entertainment, and Recreation",Golf Courses and Country Clubs,95.0,675,1,granular
+411,"Arts, Entertainment, and Recreation",Fitness and Recreational Sports Centers,327.0,5450,10,granular
+412,"Arts, Entertainment, and Recreation",Bowling Centers,24.0,500,2,granular
+413,"Arts, Entertainment, and Recreation",All Other Amusement and Recreation Industries,85.0,1000,4,granular
+414,Accommodation and Food Services,Hotels (except Casino Hotels) and Motels,3838.0,65075,59,granular
+415,Accommodation and Food Services,Casino Hotels,96.0,925,2,granular
+416,Accommodation and Food Services,All Other Traveler Accommodation,276.0,5775,13,granular
+417,Accommodation and Food Services,Recreational and Vacation Camps (except Campgrounds),79.0,2175,2,granular
+418,Accommodation and Food Services,"Rooming and Boarding Houses, Dormitories, and Workers' Camps",35.0,250,1,granular
+419,Accommodation and Food Services,Food Service Contractors,1553.0,15500,8,granular
+420,Accommodation and Food Services,Caterers,204.0,2750,11,granular
+421,Accommodation and Food Services,Mobile Food Services,367.0,4175,2,granular
+422,Accommodation and Food Services,Drinking Places (Alcoholic Beverages),797.0,8625,26,granular
+423,Accommodation and Food Services,Full-Service Restaurants,16305.0,201675,375,granular
+424,Accommodation and Food Services,Limited-Service Restaurants,2878.0,27850,55,granular
+425,Accommodation and Food Services,"Cafeterias, Grill Buffets, and Buffets",160.0,1850,4,granular
+426,Accommodation and Food Services,Snack and Nonalcoholic Beverage Bars,1178.0,10975,19,granular
+427,Other Services (except Public Administration),General Automotive Repair,226.0,2175,7,granular
+428,Other Services (except Public Administration),Other Automotive Mechanical and Electrical Repair and Maintenance,143.0,3500,1,granular
+429,Other Services (except Public Administration),"Automotive Body, Paint, and Interior Repair and Maintenance",279.0,4700,12,granular
+430,Other Services (except Public Administration),Automotive Glass Replacement Shops,36.0,500,2,granular
+431,Other Services (except Public Administration),All Other Automotive Repair and Maintenance,66.0,1750,2,granular
+432,Other Services (except Public Administration),Computer and Office Machine Repair and Maintenance,16.0,250,1,granular
+433,Other Services (except Public Administration),Commercial and Industrial Machinery and Equipment (except Automotive and Electronic) Repair and Maintenance,60.0,925,2,granular
+434,Other Services (except Public Administration),Home and Garden Equipment Repair and Maintenance,46.0,250,1,granular
+435,Other Services (except Public Administration),Appliance Repair and Maintenance,33.0,1175,3,granular
+436,Other Services (except Public Administration),Other Personal and Household Goods Repair and Maintenance,48.0,925,2,granular
+437,Other Services (except Public Administration),Barber Shops,33.0,675,1,granular
+438,Other Services (except Public Administration),Beauty Salons,177.0,3850,12,granular
+439,Other Services (except Public Administration),Other Personal Care Services,187.0,3175,11,granular
+440,Other Services (except Public Administration),Funeral Homes and Funeral Services,44.0,675,1,granular
+441,Other Services (except Public Administration),Pet Care (except Veterinary) Services,24.0,250,1,granular
+442,Other Services (except Public Administration),Photofinishing Laboratories (except One-Hour),13.0,250,1,granular
+443,Other Services (except Public Administration),Parking Lots and Garages,522.0,4525,8,granular
+444,Other Services (except Public Administration),All Other Personal Services,288.0,9650,20,granular
+445,Other Services (except Public Administration),Religious Organizations,3289.0,42300,46,granular
+446,Other Services (except Public Administration),Grantmaking Foundations,311.0,4350,9,granular
+447,Other Services (except Public Administration),Voluntary Health Organizations,650.0,2350,6,granular
+448,Other Services (except Public Administration),Other Grantmaking and Giving Services,1031.0,13700,15,granular
+449,Other Services (except Public Administration),Human Rights Organizations,128.0,2675,4,granular
+450,Other Services (except Public Administration),"Environment, Conservation and Wildlife Organizations",480.0,11950,7,granular
+451,Other Services (except Public Administration),Other Social Advocacy Organizations,4492.0,70750,63,granular
+452,Other Services (except Public Administration),Civic and Social Organizations,1365.0,30450,28,granular
+453,Other Services (except Public Administration),Business Associations,78.0,1850,4,granular
+454,Other Services (except Public Administration),Professional Organizations,254.0,3450,7,granular
+455,Other Services (except Public Administration),Labor Unions and Similar Labor Organizations,26.0,250,1,granular
+456,Other Services (except Public Administration),Political Organizations,36.0,675,1,granular
+457,Other Services (except Public Administration),"Other Similar Organizations (except Business, Professional, Labor, and Political Organizations)",65.0,1750,2,granular
+458,Other Services (except Public Administration),Private Households,8.0,250,1,granular
+459,Public Administration,Legal Counsel and Prosecution,70.0,1925,6,granular
+460,Public Administration,Administration of Education Programs,232.0,3750,2,granular
+461,Public Administration,Administration of Public Health Programs,16.0,500,2,granular
+462,Public Administration,Administration of Conservation Programs,20.0,675,1,granular
