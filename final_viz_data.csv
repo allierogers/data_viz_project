@@ -1,24 +1,4 @@
 ,naics_category_name,naics_code_name,total_jobs_retained,total_loan_dollars_thousands,loan_count,level
-0,Accommodation and Food Services,,27766.0,347600,577,broad
-1,Administrative and Support and Waste Managemen..,,5651.0,118125,145,broad
-2,"Agriculture, Forestry, Fishing and Hunting",,401.0,10275,10,broad
-3,"Arts, Entertainment, and Recreation",,4935.0,88025,71,broad
-4,Construction,,9883.0,228950,271,broad
-5,Educational Services,,7364.0,121575,129,broad
-6,Finance and Insurance,,4008.0,109800,116,broad
-7,Health Care and Social Assistance,,10700.0,148625,231,broad
-8,Information,,10255.0,266950,299,broad
-9,Management of Companies and Enterprises,,167.0,4375,9,broad
-10,Manufacturing,,6187.0,118425,155,broad
-11,"Mining, Quarrying, and Oil and Gas Extraction",,8.0,250,1,broad
-12,Other Services (except Public Administration),,14454.0,225950,282,broad
-13,"Professional, Scientific, and Technical Services",,29585.0,707375,958,broad
-14,Public Administration,,338.0,6850,11,broad
-15,Real Estate and Rental and Leasing,,5681.0,111950,119,broad
-16,Retail Trade,,10410.0,144200,210,broad
-17,Transportation and Warehousing,,2150.0,46700,45,broad
-18,Utilities,,205.0,4925,5,broad
-19,Wholesale Trade,,3683.0,64850,101,broad
 0,"Agriculture, Forestry, Fishing and Hunting",Potato Farming,79.0,4675,4,granular
 1,"Agriculture, Forestry, Fishing and Hunting",Nursery and Tree Production,55.0,675,1,granular
 2,"Agriculture, Forestry, Fishing and Hunting",All Other Miscellaneous Crop Farming,114.0,3500,1,granular
