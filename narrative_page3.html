@@ -38,7 +38,7 @@ d3.csv("https://raw.githubusercontent.com/allierogers/data_viz_project/master/fi
 
   // Add Y axis
   var y = d3.scaleLinear()
-    .domain([0, 500000])
+    .domain([0, 201000])
     .range([ height, 0]);
   svg.append("g")
     .call(d3.axisLeft(y));
@@ -51,7 +51,7 @@ d3.csv("https://raw.githubusercontent.com/allierogers/data_viz_project/master/fi
     .append("circle")
       .attr("cx", function (d) { return x(d.total_jobs_retained); } )
       .attr("cy", function (d) { return y(d.total_loan_dollars_thousands); } )
-      .attr("r", 1.5)
+      .attr("r", 3)
       .style("fill", "#69b3a2")
 
 })
