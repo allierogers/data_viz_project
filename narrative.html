@@ -5,10 +5,11 @@
 <!-- Load d3.js -->
 <script src="https://d3js.org/d3.v4.js"></script>
 
-<!-- Add 2 buttons -->
+<!-- Add buttons -->
 <button onclick="update('total_loan_dollars_thousands')">1. Loan Volume</button>
-<br> <br>
 <button onclick="update('total_jobs_retained')">2. Jobs Retained</button>
+<button onclick="makeScatterPlot()">3. Loan Volume vs. Jobs Retained</button>
+<br> <br> <br>
 
 
 <!-- Create a div where the graph will take place -->
@@ -53,7 +54,6 @@ var yAxis = svg.append("g")
   .attr("class", "myYaxis")
 
 
-// A function that create / update the plot for a given variable:
 function update(selectedVar) {
 
   // Parse the Data
@@ -90,18 +90,36 @@ function update(selectedVar) {
         .attr("width", x.bandwidth())
         .attr("height", function(d) { return height - y(d[selectedVar]); })
         .attr("fill", "#69b3a2")
+
+    // // add scatterplot
+    // svg.selectAll('.dot')
+    //    .data(data)
+    //    .enter()
+    //    .append("circle")
+    //      .attr("class", "dot")
+    //      .attr("cx", function (d) { return x(d.total_jobs_retained); } )
+    //      .attr("cy", function (d) { return y(d.total_loan_dollars_thousands); } )
+    //      .attr("r", 1.5)
+    //      .style("fill", "#69b3a2")
+
   })
 
 }
 
+function makeScatterPlot() {
+}
+
 update('total_loan_dollars_thousands')
 
-svg.append("text")
-        .attr("x", (width / 2))             
-        .attr("y", 0 - (margin.top / 2))
-        .attr("text-anchor", "middle")  
-        .style("font-size", "16px") 
-        .style("text-decoration", "underline")  
-        .text("Paycheck Protection Program (PPP) Loans by Borrower NAICS Category");
+// add scatterplot
+svg.selectAll('.dot')
+   .data(data)
+   .enter()
+   .append("circle")
+     .attr("class", "dot")
+     .attr("cx", function (d) { return x(d.total_jobs_retained); } )
+     .attr("cy", function (d) { return y(d.total_loan_dollars_thousands); } )
+     .attr("r", 1.5)
+     .style("fill", "#69b3a2")
 
 </script>
