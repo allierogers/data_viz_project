@@ -6,8 +6,10 @@
 <script src="https://d3js.org/d3.v4.js"></script>
 
 <!-- Add 2 buttons -->
-<button onclick="update('total_jobs_retained')">Jobs Retained</button>
-<button onclick="update('total_loan_dollars_thousands')">Loan Volume</button>
+<button onclick="update('total_loan_dollars_thousands')">1. Loan Volume</button>
+<br> <br>
+<button onclick="update('total_jobs_retained')">2. Jobs Retained</button>
+
 
 <!-- Create a div where the graph will take place -->
 <div id="my_dataviz"></div>
@@ -30,48 +32,76 @@ var svg = d3.select("#my_dataviz")
     .attr("transform",
           "translate(" + margin.left + "," + margin.top + ")");
 
+// // initialize the svg with loan dollar data
+// d3.csv("https://raw.githubusercontent.com/allierogers/data_viz_project/master/category_data_2.csv", function(data) {
+
+  
+
+  // })
+
+// Initialize the X axis
+var x = d3.scaleBand()
+  .range([ 0, width ])
+  .padding(0.2);
+var xAxis = svg.append("g")
+  .attr("transform", "translate(0," + height + ")")
+
+// Initialize the Y axis
+var y = d3.scaleLinear()
+  .range([ height, 0]);
+var yAxis = svg.append("g")
+  .attr("class", "myYaxis")
+
+
+// A function that create / update the plot for a given variable:
 function update(selectedVar) {
+
   // Parse the Data
   d3.csv("https://raw.githubusercontent.com/allierogers/data_viz_project/master/category_data_2.csv", function(data) {
 
-  // sort data
+    // sort data
     data.sort(function(b, a) {
       return a[selectedVar] - b[selectedVar];
     });
 
-  // X axis
-  var x = d3.scaleBand()
-    .range([ 0, width ])
-    .domain(data.map(function(d) { return d.naics_category_name; }))
-    .padding(0.2);
-  svg.append("g")
-    .attr("transform", "translate(0," + height + ")")
-    .call(d3.axisBottom(x))
-    .selectAll("text")
-      .attr("transform", "translate(-10,0)rotate(-45)")
-      .style("text-anchor", "end");
+    // X axis
+    x.domain(data.map(function(d) { return d.naics_category_name; }))
+    xAxis.transition().duration(1000).call(d3.axisBottom(x))
+    xAxis.selectAll("text")
+      .attr("transform", "translate(-10,0)rotate(-45)");
 
-  // Add Y axis
-  var y = d3.scaleLinear()
-    .domain([0, 30000])
-    .range([ height, 0]);
-  svg.append("g")
-    .call(d3.axisLeft(y));
+    // Add Y axis
+    y.domain([0, d3.max(data, function(d) { return +d[selectedVar] }) ]);
+    yAxis.transition().duration(1000).call(d3.axisLeft(y));
 
-  // Bars
-  svg.selectAll("mybar")
-    .data(data)
-    .enter()
-    .append("rect")
-      .attr("x", function(d) { return x(d.naics_category_name); })
-      .attr("y", function(d) { return y(d[selectedVar]); })
-      .attr("width", x.bandwidth())
-      .attr("height", function(d) { return height - y(d.total_jobs_retained); })
-      .attr("fill", "#69b3a2")
+    // variable u: map data to existing bars
+    var u = svg.selectAll("rect")
+      .data(data)
 
+    // update bars
+    u
+      .enter()
+      .append("rect")
+      .merge(u)
+      .transition()
+      .duration(1000)
+        .attr("x", function(d) { return x(d.naics_category_name); })
+        .attr("y", function(d) { return y(d[selectedVar]); })
+        .attr("width", x.bandwidth())
+        .attr("height", function(d) { return height - y(d[selectedVar]); })
+        .attr("fill", "#69b3a2")
   })
+
 }
-// Initialize plot
-update('total_jobs_retained')
+
+update('total_loan_dollars_thousands')
+
+svg.append("text")
+        .attr("x", (width / 2))             
+        .attr("y", 0 - (margin.top / 2))
+        .attr("text-anchor", "middle")  
+        .style("font-size", "16px") 
+        .style("text-decoration", "underline")  
+        .text("Paycheck Protection Program (PPP) Loans by Borrower NAICS Category");
 
 </script>
