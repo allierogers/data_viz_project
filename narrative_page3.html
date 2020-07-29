@@ -5,6 +5,12 @@
 <!-- Load d3.js -->
 <script src="https://d3js.org/d3.v4.js"></script>
 
+<!-- Add buttons -->
+<button onclick="update('total_loan_dollars_thousands')">1. Loan Volume</button>
+<button onclick="update('total_jobs_retained')">2. Jobs Retained</button>
+<button onclick="makeScatterPlot()">3. Loan Volume vs. Jobs Retained</button>
+<br> <br> <br>
+
 <!-- Create a div where the graph will take place -->
 <div id="my_dataviz"></div>
 
@@ -12,25 +18,78 @@
 <script>
 
 // set the dimensions and margins of the graph
-var margin = {top: 10, right: 30, bottom: 30, left: 60},
-    width = 460 - margin.left - margin.right,
-    height = 400 - margin.top - margin.bottom;
+var margin = {top: 30, right: 30, bottom:200, left: 200},
+    width = 1200 - margin.left - margin.right,
+    height = 800 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
 var svg = d3.select("#my_dataviz")
   .append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
+    .call(d3.zoom().on("zoom", function () {
+       svg.attr("transform", d3.event.transform)
+    }))
   .append("g")
     .attr("transform",
           "translate(" + margin.left + "," + margin.top + ")");
 
+function myColor(d) {
+ //  ['Agriculture, Forestry, Fishing and Hunting'
+ // 'Mining, Quarrying, and Oil and Gas Extraction' 'Utilities'
+ // 'Construction' 'Manufacturing' 'Wholesale Trade' 'Retail Trade'
+ // 'Transportation and Warehousing' 'Information' 'Finance and Insurance'
+ // 'Real Estate and Rental and Leasing'
+ // 'Professional, Scientific, and Technical Services'
+ // 'Management of Companies and Enterprises'
+ // 'Administrative and Support and Waste Managemen..' 'Educational Services'
+ // 'Health Care and Social Assistance' 'Arts, Entertainment, and Recreation'
+ // 'Accommodation and Food Services'
+ // 'Other Services (except Public Administration)' 'Public Administration']
+    if (d.naics_category_name == 'Professional, Scientific, and Technical Services') {
+      return "gold"
+    }
+    else if (d.naics_category_name == 'Accommodation and Food Services') {
+      return "blue"
+    }
+    else if (d.naics_category_name == 'Information') {
+      return "green"
+    }
+    else if (d.naics_category_name == 'Construction') {
+      return "yellow"
+    }
+    else if (d.naics_category_name == 'Other Services (except Public Administration)') {
+      return "black"
+    }
+    else if (d.naics_category_name == 'Health Care and Social Assistance') {
+      return 'grey'
+    }
+    else if (d.naics_category_name == 'Retail Trade') {
+      return 'darkgreen'
+    }
+    else if (d.naics_category_name == 'Educational Services') {
+      return 'pink'
+    }
+    else if (d.naics_category_name == 'Manufacturing') {
+      return 'brown'
+    }
+    else if (d.naics_category_name == 'Administrative and Support and Waste Managemen..') {
+      return 'slateblue'
+    }
+    else if (d.naics_category_name == 'Real Estate and Rental and Leasing') {
+      return 'grey1'
+    }
+    else {
+      return "orange"
+    }
+
+  }
 //Read the data
 d3.csv("https://raw.githubusercontent.com/allierogers/data_viz_project/master/final_viz_data.csv", function(data) {
 
   // Add X axis
   var x = d3.scaleLinear()
-    .domain([0, 4000])
+    .domain([0, 18000])
     .range([ 0, width ]);
   svg.append("g")
     .attr("transform", "translate(0," + height + ")")
@@ -38,7 +97,7 @@ d3.csv("https://raw.githubusercontent.com/allierogers/data_viz_project/master/fi
 
   // Add Y axis
   var y = d3.scaleLinear()
-    .domain([0, 201000])
+    .domain([0, 220000])
     .range([ height, 0]);
   svg.append("g")
     .call(d3.axisLeft(y));
@@ -51,8 +110,25 @@ d3.csv("https://raw.githubusercontent.com/allierogers/data_viz_project/master/fi
     .append("circle")
       .attr("cx", function (d) { return x(d.total_jobs_retained); } )
       .attr("cy", function (d) { return y(d.total_loan_dollars_thousands); } )
-      .attr("r", 3)
-      .style("fill", "#69b3a2")
+      .attr("r", 5)
+      // .style("fill", "#69b3a2")
+      .attr("fill", function(d){return myColor(d) })
+      .on("mouseover", function(){return tooltip.style("visibility", "visible");})
+  .on("mousemove", function(){return tooltip.style("top", (event.pageY)+"px").style("left",(event.pageX)+"px");})
+  .on("mouseout", function(){return tooltip.style("visibility", "hidden");});
+
+  // create a tooltip
+var tooltip = d3.select("#my_dataviz")
+  .append("div")
+    .style("position", "absolute")
+    .style("visibility", "hidden")
+    .text("I'm a circle!");
+
+//
+// d3.select("#circleBasicTooltip")
+//   .on("mouseover", function(){return tooltip.style("visibility", "visible");})
+//   .on("mousemove", function(){return tooltip.style("top", (event.pageY)+"px").style("left",(event.pageX)+"px");})
+//   .on("mouseout", function(){return tooltip.style("visibility", "hidden");});
 
 })
 
