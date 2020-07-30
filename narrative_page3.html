@@ -85,7 +85,7 @@ function myColor(d) {
 
   }
 //Read the data
-d3.csv("https://raw.githubusercontent.com/allierogers/data_viz_project/master/final_viz_data.csv", function(data) {
+d3.csv("https://raw.githubusercontent.com/allierogers/data_viz_project/master/final_viz_data_granular_only.csv", function(data) {
 
   // Add X axis
   var x = d3.scaleLinear()
@@ -102,33 +102,73 @@ d3.csv("https://raw.githubusercontent.com/allierogers/data_viz_project/master/fi
   svg.append("g")
     .call(d3.axisLeft(y));
 
+  // // Labels for tooltips
+  // var myCategories = d3.map(data, function(d){return d.naics_category_name;}).keys()
+  // var myCodes = d3.map(data, function(d){return d.naics_code_name;}).keys()
+
+   // create a tooltip
+  var tooltip = d3.select("#my_dataviz")
+      .append("div")
+        .style("position", "absolute")
+        .style("visibility", "hidden")
+        .style("background-color", "white")
+        .style("border", "solid")
+        .style("border-width", "2px")
+        .style("border-radius", "5px")
+        .style("padding", "5px")
+        .attr("width", "5px")
+        .attr("height", "5px")
+        .attr("id", "tooltip")
+
+    // Three function that change the tooltip when user hover / move / leave a cell
+  var mouseover = function(d) {
+    tooltip
+      .style("opacity", 1)
+    d3.select(this)
+      .style("stroke", "black")
+      .style("opacity", 1)
+  }
+  var mousemove = function(d) {
+    tooltip
+      .html("The exact value of<br>this cell is: " + d.naics_code_name)
+      .style("left", (d3.mouse(this)[0]) + "px")
+      .style("top", (d3.mouse(this)[1]) + "px")
+      .style("visibility", "visible")
+  }
+  var mouseoversimple = function(d) {
+    tooltip.style("visibility", "visible");
+  }
+  var mouseleave = function(d) {
+    tooltip
+      .style("opacity", 0)
+    d3.select(this)
+      .style("stroke", "none")
+      .style("opacity", 0.8)
+  }
+
   // Add dots
-  svg.append('g')
-    .selectAll("dot")
+  svg.selectAll()
     .data(data)
     .enter()
     .append("circle")
       .attr("cx", function (d) { return x(d.total_jobs_retained); } )
       .attr("cy", function (d) { return y(d.total_loan_dollars_thousands); } )
       .attr("r", 6)
-      // .style("fill", "#69b3a2")
       .attr("fill", function(d){return myColor(d) })
       .style("opacity", 0.8)
       .style("stroke-opacity", 0) // set the stroke opacity
       .style("stroke", "white")      // set the line colour
-      .style("stroke-width", 20)
-      .on("mouseover", function(){return tooltip.style("visibility", "visible");})
-  .on("mousemove", function(){return tooltip.style("top", (event.pageY)+"px").style("left",(event.pageX)+"px");})
-  .on("mouseout", function(){return tooltip.style("visibility", "hidden");});
-
-  // create a tooltip
-var tooltip = d3.select("#my_dataviz")
-  .append("div")
-    .style("position", "absolute")
-    .style("visibility", "hidden")
-    .text("I'm a circle!");
-
-
+      .style("stroke-width", 5)
+      // .on("mouseover", mouseoversimple())
+      .on("mouseover", function(d){tooltip.style("visibility", "visible")
+                                                 .style("opacity", 1)
+                                    d3.select(this).style("stroke", "black")
+                                                   .style("stroke-opacity", 1);})
+      .on("mousemove", function(d){tooltip.html(d.total_jobs_retained)
+                                          .style("top", (d3.mouse(this)[1]) + 70 + "px")
+                                          .style("left",(d3.mouse(this)[0]) + 70 + "px");})
+      .on("mouseout", function(d){tooltip.style("visibility", "hidden");});
+    
 })
 
 svg.append("text")
