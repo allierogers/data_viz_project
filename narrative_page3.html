@@ -102,9 +102,20 @@ d3.csv("https://raw.githubusercontent.com/allierogers/data_viz_project/master/vi
   svg.append("g")
     .call(d3.axisLeft(y));
 
-  // // Labels for tooltips
-  // var myCategories = d3.map(data, function(d){return d.naics_category_name;}).keys()
-  // var myCodes = d3.map(data, function(d){return d.naics_code_name;}).keys()
+    // Add X axis label:
+  svg.append("text")
+      .attr("text-anchor", "end")
+      .attr("x", width/2 + margin.left)
+      .attr("y", height + margin.top + 20)
+      .text("Number of Jobs Retained");
+
+  // Y axis label:
+  svg.append("text")
+      .attr("text-anchor", "end")
+      .attr("transform", "rotate(-90)")
+      .attr("y", -margin.left + 20)
+      .attr("x", -margin.top - height/2 + 20)
+      .text("Loan Dollars Received (in Thousands)")
 
    // create a tooltip
   var tooltip = d3.select("#my_dataviz")

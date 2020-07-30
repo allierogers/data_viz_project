@@ -53,6 +53,13 @@ var y = d3.scaleLinear()
 var yAxis = svg.append("g")
   .attr("class", "myYaxis")
 
+    // Add X axis label:
+  svg.append("text")
+      .attr("text-anchor", "end")
+      .attr("x", width/2 + margin.left)
+      .attr("y", height + margin.top + 20)
+      .text("NAICS Category of Borrower");
+
 
 function update(selectedVar) {
 
