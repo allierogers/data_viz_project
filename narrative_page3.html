@@ -85,7 +85,7 @@ function myColor(d) {
 
   }
 //Read the data
-d3.csv("https://raw.githubusercontent.com/allierogers/data_viz_project/master/final_viz_data_granular_only.csv", function(data) {
+d3.csv("https://raw.githubusercontent.com/allierogers/data_viz_project/master/viz3data.csv", function(data) {
 
   // Add X axis
   var x = d3.scaleLinear()
@@ -116,7 +116,7 @@ d3.csv("https://raw.githubusercontent.com/allierogers/data_viz_project/master/fi
         .style("border-width", "2px")
         .style("border-radius", "5px")
         .style("padding", "5px")
-        .attr("width", "5px")
+        .attr("width", "100px")
         .attr("height", "5px")
         .attr("id", "tooltip")
 
@@ -153,7 +153,7 @@ d3.csv("https://raw.githubusercontent.com/allierogers/data_viz_project/master/fi
     .append("circle")
       .attr("cx", function (d) { return x(d.total_jobs_retained); } )
       .attr("cy", function (d) { return y(d.total_loan_dollars_thousands); } )
-      .attr("r", 6)
+      .attr("r", 3)
       .attr("fill", function(d){return myColor(d) })
       .style("opacity", 0.8)
       .style("stroke-opacity", 0) // set the stroke opacity
@@ -162,12 +162,21 @@ d3.csv("https://raw.githubusercontent.com/allierogers/data_viz_project/master/fi
       // .on("mouseover", mouseoversimple())
       .on("mouseover", function(d){tooltip.style("visibility", "visible")
                                                  .style("opacity", 1)
-                                    d3.select(this).style("stroke", "black")
+                                    d3.select(this).style("stroke", function(d){return myColor(d) })
                                                    .style("stroke-opacity", 1);})
-      .on("mousemove", function(d){tooltip.html(d.total_jobs_retained)
-                                          .style("top", (d3.mouse(this)[1]) + 70 + "px")
-                                          .style("left",(d3.mouse(this)[0]) + 70 + "px");})
-      .on("mouseout", function(d){tooltip.style("visibility", "hidden");});
+      .on("mousemove", function(d){
+           tooltip
+            .style("top", (d3.mouse(this)[1]) + "px")
+            .style("left",(d3.mouse(this)[0]) + "px")
+            .style("display", "inline-block")
+            .html(d.naics_code_name + "<br>Total Jobs Retained: " + d.total_jobs_retained + "<br>Loan Dollars Received (Thousands): " + d.total_loan_dollars_thousands); 
+        })
+      .on("mouseleave", function(d){
+        tooltip.style("visibility", "hidden")
+        d3.select(this)
+          .style("stroke", "none")
+          .style("opacity", 0.8);
+      });
     
 })
 
