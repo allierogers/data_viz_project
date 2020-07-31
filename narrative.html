@@ -20,7 +20,7 @@
 
 
 // set the dimensions and margins of the graph
-var margin = {top: 30, right: 30, bottom:200, left: 200},
+var margin = {top: 30, right: 30, bottom:200, left: 300},
     width = 1400 - margin.left - margin.right,
     height = 800 - margin.top - margin.bottom;
 
@@ -41,25 +41,36 @@ var svg = d3.select("#my_dataviz")
   // })
 
 // Initialize the X axis
-var x = d3.scaleBand()
-  .range([ 0, width ])
-  .padding(0.2);
+var x = d3.scaleLinear()
+  // .domain([0, 13000])
+  .range([ 0, width ]);
+  
 var xAxis = svg.append("g")
   .attr("transform", "translate(0," + height + ")")
 
-// Initialize the Y axis
-var y = d3.scaleLinear()
-  .range([ height, 0]);
+// Initialize the X axis
+var y = d3.scaleBand()
+  .range([ 0, height])
+  .padding(0.2);
 var yAxis = svg.append("g")
   .attr("class", "myYaxis")
 
-    // Add X axis label:
+ 
+
+  // Y axis label:
   svg.append("text")
       .attr("text-anchor", "end")
-      .attr("x", width/2 + margin.left)
-      .attr("y", height + margin.top + 20)
-      .text("NAICS Category of Borrower");
+      .attr("transform", "rotate(-90)")
+      .attr("y", -margin.left + 20)
+      .attr("x", -margin.top - height/2 + 20)
+      .text("Borrower NAICS Category")
 
+// Add X axis label:
+  var xl = svg.append("text")
+        .attr("text-anchor", "end")
+        .attr("x", width/2 + margin.left - 100)
+        .attr("y", height + margin.top + 20)
+        .attr("class", "xaxislabel");
 
 function update(selectedVar) {
 
@@ -71,15 +82,13 @@ function update(selectedVar) {
       return a[selectedVar] - b[selectedVar];
     });
 
-    // X axis
-    x.domain(data.map(function(d) { return d.naics_category_name; }))
-    xAxis.transition().duration(1000).call(d3.axisBottom(x))
-    xAxis.selectAll("text")
-      .attr("transform", "translate(-10,0)rotate(-45)");
+    // Y axis
+    y.domain(data.map(function(d) { return d.naics_category_name; }))
+    yAxis.transition().duration(1000).call(d3.axisLeft(y))
 
-    // Add Y axis
-    y.domain([0, d3.max(data, function(d) { return +d[selectedVar] }) ]);
-    yAxis.transition().duration(1000).call(d3.axisLeft(y));
+    // X axis
+    x.domain([0, d3.max(data, function(d) { return +d[selectedVar] }) ]);
+    xAxis.transition().duration(1000).call(d3.axisBottom(x));
 
     // variable u: map data to existing bars
     var u = svg.selectAll("rect")
@@ -92,22 +101,15 @@ function update(selectedVar) {
       .merge(u)
       .transition()
       .duration(1000)
-        .attr("x", function(d) { return x(d.naics_category_name); })
-        .attr("y", function(d) { return y(d[selectedVar]); })
-        .attr("width", x.bandwidth())
-        .attr("height", function(d) { return height - y(d[selectedVar]); })
+        .attr("x", x(0) )
+        .attr("y", function(d) { return y(d.naics_category_name); })
+        .attr("height", y.bandwidth())
+        .attr("width", function(d) { return x(d[selectedVar]); })
         .attr("fill", "#69b3a2")
 
-    // // add scatterplot
-    // svg.selectAll('.dot')
-    //    .data(data)
-    //    .enter()
-    //    .append("circle")
-    //      .attr("class", "dot")
-    //      .attr("cx", function (d) { return x(d.total_jobs_retained); } )
-    //      .attr("cy", function (d) { return y(d.total_loan_dollars_thousands); } )
-    //      .attr("r", 1.5)
-    //      .style("fill", "#69b3a2")
+    // Add X axis label:
+    xl.style("opacity", 1)
+    .text(selectedVar);
 
   })
 
