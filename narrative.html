@@ -55,8 +55,6 @@ var y = d3.scaleBand()
 var yAxis = svg.append("g")
   .attr("class", "myYaxis")
 
- 
-
   // Y axis label:
   svg.append("text")
       .attr("text-anchor", "end")
@@ -71,6 +69,15 @@ var yAxis = svg.append("g")
         .attr("x", width/2 + margin.left - 100)
         .attr("y", height + margin.top + 20)
         .attr("class", "xaxislabel");
+
+function myXLabel(selectedVar) {
+    if (selectedVar == 'total_loan_dollars_thousands') {
+      return "Dollars Lent (in Thousands)"
+    }
+    else {
+      return 'Number of Jobs Retained'
+    }
+  }
 
 function update(selectedVar) {
 
@@ -109,13 +116,10 @@ function update(selectedVar) {
 
     // Add X axis label:
     xl.style("opacity", 1)
-    .text(selectedVar);
+      .text(myXLabel(selectedVar));
 
   })
 
-}
-
-function makeScatterPlot() {
 }
 
 update('total_loan_dollars_thousands')
