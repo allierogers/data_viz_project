@@ -33,13 +33,6 @@ var svg = d3.select("#my_dataviz")
     .attr("transform",
           "translate(" + margin.left + "," + margin.top + ")");
 
-// // initialize the svg with loan dollar data
-// d3.csv("https://raw.githubusercontent.com/allierogers/data_viz_project/master/category_data_2.csv", function(data) {
-
-  
-
-  // })
-
 // Initialize the X axis
 var x = d3.scaleLinear()
   // .domain([0, 13000])
@@ -61,7 +54,7 @@ var yAxis = svg.append("g")
       .attr("transform", "rotate(-90)")
       .attr("y", -margin.left + 20)
       .attr("x", -margin.top - height/2 + 20)
-      .text("Borrower NAICS Category")
+      .text("Borrower NAICS Sector")
 
 // Add X axis label:
   var xl = svg.append("text")
@@ -130,7 +123,7 @@ svg.append("text")
         .attr("text-anchor", "middle")  
         .style("font-size", "16px") 
         .style("text-decoration", "underline")  
-        .text("San Francisco Paycheck Protection Program (PPP) Loans by Borrower NAICS Category");
+        .text("San Francisco Paycheck Protection Program (PPP) Loans by Borrower NAICS Sector");
 
 
 </script>
