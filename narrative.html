@@ -33,6 +33,19 @@ var svg = d3.select("#my_dataviz")
     .attr("transform",
           "translate(" + margin.left + "," + margin.top + ")");
 
+var annotation3 = d3.select("#my_dataviz")
+  .append("div")
+    .style("position", "absolute")
+    .style("visibility", "visible")
+    .html("<i>NAICS <b>sector</b> is used by Federal statistical agencies to classify businesses</i>")
+    .style("top", "30px")
+    .style("left","1125px")
+    .style("border", "solid")
+    .style("border-width", "1px")
+    .style("padding", "10px")
+    .style("border-color", "steelblue")
+    .attr("fill", "salmon")
+
 // Initialize the X axis
 var x = d3.scaleLinear()
   // .domain([0, 13000])
